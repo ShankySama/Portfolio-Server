@@ -6,7 +6,14 @@ const headerRoutes = require("./routes/header");
 
 const app = express();
 const port = process.env.PORT || 5000;
-const uri =process.env.CONNECTION_STRING;
+const username = process.env.USER_NAME;
+const password = process.env.PASSWORD;
+const uri =
+  "mongodb+srv://" +
+  username +
+  ":" +
+  password +
+  "@portfolio-cluster.h86o7.mongodb.net/?retryWrites=true&w=majority&appName=Portfolio-Cluster";
 
 app.use(cors());
 app.use(express.json());
