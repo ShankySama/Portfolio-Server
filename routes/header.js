@@ -3,6 +3,7 @@ const {
   getHeaderData,
   createHeaderData,
 } = require("../controllers/headerController");
+
 const router = express.Router();
 
 router.get("/headerData", getHeaderData);
