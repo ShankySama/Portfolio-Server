@@ -7,9 +7,7 @@
     "nodemon": "^3.1.7"
   },
   "scripts": {
-    "serve": "node server.js"
-  },
-  "devDependencies": {
-    "babel-loader": "^9.2.1"
+    "serve": "node server.js",
+    "dev": "nodemon server.js"
   }
 }
