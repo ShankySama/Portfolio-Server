@@ -7,6 +7,6 @@
     "nodemon": "^3.1.7"
   },
   "scripts": {
-    "serve": "nodemon server.js"
+    "serve": "node server.js"
   }
 }
