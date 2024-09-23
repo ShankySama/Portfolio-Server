@@ -3,6 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const headerRoutes = require("./routes/header");
+const footerRoutes = require("./routes/footer");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -30,6 +31,7 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use("/api",headerRoutes);
+app.use("/api",footerRoutes);
 app.get("/", (req, res) => {
   res.send({ message: "Server is running" });
 });
